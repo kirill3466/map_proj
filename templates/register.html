@@ -1,0 +1,63 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<div class="flex items-center min-h-full flex-col justify-center px-6 py-12 lg:px-8 border-gray-700">
+    <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 border-gray-300">
+        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+            <h2 class="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">Зарегистрироваться</h2>
+        </div>
+        <div class="my-10 sm:mx-auto sm:w-full sm:max-w-sm">
+            <form class="space-y-6" action="/auth/register" method="POST">
+                <div>
+                    <label for="email" class="block text-sm/6 font-medium text-gray-900">Email / Логин</label>
+                    <div class="mt-2">
+                        <input 
+                            type="email" 
+                            name="email" 
+                            required
+                            class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                        >
+                    </div>
+                </div>
+
+                <div>
+                    <label for="password" class="block text-sm/6 font-medium text-gray-900">Пароль</label>
+                    <div class="mt-2">
+                        <input
+                            type="password"
+                            name="password"
+                            required
+                            class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                        >
+                    </div>
+                </div>
+
+                <div>
+                    <label for="confirm_password" class="block text-sm/6 font-medium text-gray-900">Подтвердите пароль</label>
+                    <div class="mt-2">
+                        <input
+                            type="password"
+                            name="confirm_password"
+                            required
+                            class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                        >
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="flex w-full justify-center rounded-md text-white bg-slate-800 hover:bg-gray-700 focus:ring-4 focus:ring-blue-300 font-medium text-sm px-4 py-2 md:px-5 md:py-2.5  focus:outline-none dark:focus:ring-blue-800">
+                        Зарегистрироваться
+                    </button>
+                </div>
+            </form>
+
+            <p class="mt-10 text-center text-sm/6 text-gray-500">
+                Уже есть аккаунт?
+                <a href="/auth/login" class="font-semibold text-indigo-600 hover:text-indigo-500">Войти</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

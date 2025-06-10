@@ -1,0 +1,46 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div class="w-full p-6 mx-auto">
+    <div class="flex items-center justify-between mb-6">
+        <h5 class="text-2xl font-bold leading-none text-black-900">Участки</h5>
+    </div>
+
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {% for parcel in parcels %}
+            {% set last_number = parcel.readable_address.split(' ')[-1] if parcel.readable_address.split(' ')[-1].isdigit() else parcel.cadastral_code.split(':')[-1] %}
+            <a href="/parcels/{{ last_number }}">  
+                <div class="p-5 bg-gray-100 border border-gray-200 rounded-lg shadow-sm">
+
+                    <div class="mb-4">
+                        <span class="text-sm font-medium text-black-500 dark:text-black-400">Номер участка / Кадастровый номер:</span>
+                        <p class="text-lg font-semibold text-black-900 dark:text-black">{{ parcel.code_id if parcel.code_id.isdigit() else parcel.cadastral_code }}</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <span class="text-sm font-medium text-black-500 dark:text-black-400">Координаты:</span>
+                        <p class="text-lg font-semibold text-black-900 dark:text-black">
+                            {{ parcel.latitude }}, {{ parcel.longitude }}
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <span class="text-sm font-medium text-black-500 dark:text-black-400">Кадастровая стоимость:</span>
+                        <p class="text-lg font-semibold text-black-900 dark:text-black">{{ parcel.cad_cost }}</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <span class="text-sm font-medium text-black-500 dark:text-black-400">Описание:</span>
+                        <p class="text-lg font-semibold text-black-900 dark:text-black">{{ parcel.description if parcel.description else 'Нет' }}</p>
+                    </div>
+
+                    <div class="mt-4 pt-4 border-gray-200 dark:border-gray-600">
+                        <span class="text-sm font-medium text-black-500 dark:text-black-400">Владелец:</span>
+                        <p class="text-base text-black-700 dark:text-black-300">{{ parcel.owner_id.email  if parcel.owner_id else 'Нет' }}</p>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

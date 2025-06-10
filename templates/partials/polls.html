@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8 max-w-4xl">
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-bold text-gray-800">Голосования</h1>
+        <a href="/polls/create" class="btn font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            Создать голосование
+        </a>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {% for poll in polls %}
+        <div class="border rounded p-4">
+            <h2 class="text-xl">{{ poll.question }}</h2>
+            <a href="/polls/{{ poll.id }}" class="text-blue-500">Проголосовать</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

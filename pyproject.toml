@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "interactive-map"
+version = "0.1.0"
+description = ""
+authors = ["kirill <petrov3466@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+uvicorn = "^0.32.1"
+sqlalchemy = "^2.0.36"
+asyncpg = "^0.30.0"
+psycopg2-binary = "^2.9.10"
+alembic = "^1.14.0"
+python-dotenv = "^1.0.1"
+bcrypt = "^4.2.1"
+pyjwt = "^2.10.1"
+python-multipart = "^0.0.20"
+jinja2 = "^3.1.5"
+geopandas = {extras = ["all"], version = "^1.0.1"}
+fastapi-tailwind = "^1.0.2b1"
+fastapi = "^0.115.6"
+rosreestr2coord = "^5.0.1"
+aiohttp = "^3.11.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

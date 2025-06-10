@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+
+.headroom {
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+    opacity: 1;
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+body {
+    font-family: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+.hero-section {
+    background-image: url('/static/images/nv_main2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 520px;
+}
+
+.btn {
+    color: white;
+    background-color: var(--color-slate-800);
+    border-radius: var(--radius-lg);
+}
+
+.btn:hover {
+    color:white;
+    background-color: oklch(37.2% 0.044 257.287);
+}
+
+.btn-del {
+    color: white;
+    background-color: var(--color-red-600);
+    border-radius: var(--radius-lg);
+}
+
+.btn-del:hover {
+    color:white;
+    background-color: var(--color-red-400);
+}
+

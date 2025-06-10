@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ТСЖ - главная</title>
+        <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+        <link rel="stylesheet" href="static/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="static/css/main.css">
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <link href="/static/css/output.css" rel="stylesheet">
+        <link rel="stylesheet" href="/static/leaflet/leaflet.css">
+        <script src="/static/leaflet/leaflet.js"></script>
+    </head>
+    <body>
+        <div class="">
+            {% include 'navbar.html' %}
+            <main>
+                <div class="mx-auto mb-auto flex flex-col justify-between">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </main>
+        </div>
+
+    </body>
+</html>

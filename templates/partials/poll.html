@@ -1,0 +1,40 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8 max-w-4xl">
+    <h1 class="text-2xl font-bold text-gray-800 mb-6">{{ poll.question }}</h1>
+    <div class="border p-4 rounded">
+        {% if already_voted %}
+            <div class="mt-8">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4">Результаты голосования</h2>
+                <div class="space-y-2">
+                    {% for option in poll.options %}
+                    <div class="flex justify-between items-center">
+                        <span>{{ option.text }}</span>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded">
+                            {{ option.votes_count }} голосов
+                        </span>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% else %}
+            <form action="/polls/vote" method="POST" class="space-y-4">
+                {% for option in poll.options %}
+                <div class="flex items-center space-x-2">
+                    <input type="radio" name="option_id" value="{{ option.id }}" required>
+                    <label class="text-gray-700">{{ option.text }}</label>
+                </div>
+                {% endfor %}
+
+                <input type="hidden" name="poll_id" value="{{ poll.id }}">
+
+                <button type="submit" class="bg-slate-800 hover:bg-gray-700 text-white py-2 px-4 rounded">
+                    Проголосовать
+                </button>
+            </form>
+        {% endif %}
+    </div>
+    
+</div>
+{% endblock %}

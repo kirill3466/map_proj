@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="container mx-auto px-4 py-8 max-w-4xl">
+    <h1 class="text-2xl font-bold text-gray-800 mb-6">Создание нового поста</h1>
+    <form action="/posts/create" method="POST" class="space-y-4">
+        <div>
+            <label for="title" class="block text-sm font-medium text-gray-700">Заголовок</label>
+            <input type="text" id="title" name="title" required 
+                   class="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+        </div>
+
+        <div>
+            <label for="content" class="block text-sm font-medium text-gray-700">Содержимое</label>
+            <textarea id="content" name="content" rows="4" required 
+                      class="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+        </div>
+
+        <div>
+            <button type="submit" 
+                    class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Создать пост
+            </button>
+        </div>
+    </form>
+</div>
+{% endblock content %}

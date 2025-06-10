@@ -1,0 +1,124 @@
+{% extends 'index.html' %}
+{% block content %}
+<style>
+    #map {
+        height: 700px;
+    }
+    #map > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-marker-pane > div:nth-child(14) > div,
+    #map > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-overlay-pane > svg > g > path:nth-child(14) {
+        display: none;
+    }
+</style>
+<div class="">
+    <div id="map">
+    </div>
+</div>
+
+<script>
+    defaultColor = '#2f4f4f'
+    darkerColor = '#060a0a'
+    borderColor = '#708090'
+    missing = 'red'
+    darkerMissing = '#8B0000'
+
+    var map = L.map('map', {attributionControl: false}).setView([60.9003, 76.6621], 16);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 17,
+        attribution: '© OpenStreetMap',
+    }).addTo(map);
+
+    fetch('/static/geodata/result1.geojson')
+    .then(response => response.json())
+    .then(data => {
+        addGeoJsonToMap(data);
+    });
+
+    function addGeoJsonToMap(geojsonData) {
+        L.geoJSON(geojsonData, {
+            onEachFeature: function (feature, layer) {
+                var cad_number = lastNums(feature.properties.code);
+                var id = feature.properties.code_id;
+                if (id == null) {
+                    id = lastNums(feature.properties.code);
+                }
+                var center = getPolygonCenter(layer);
+                
+                var customId = L.divIcon({
+                    className: 'text-neutral-900 font-semibold',
+                    html: '<div>' + id + '</div>'
+                });
+
+                L.marker(center, { icon: customId }).addTo(map);
+
+                layer.on('mouseover', function () {
+                    if (feature.properties.code_id !== null) {
+                        this.setStyle({
+                            'fillColor': darkerColor,
+                        });
+                    }
+                });
+
+                layer.on('mouseout', function () {
+                    if (feature.properties.code_id !== null) {
+                        this.setStyle(setStyle(feature));
+                    }
+                });
+
+
+                layer.on('click', function () {
+                    window.location.href = 'parcels/' + cad_number;
+                });
+            },
+            style: setStyle
+        }).addTo(map);
+    }
+
+    function setStyle(feature) {
+        var id = feature.properties.code_id;
+        if (id == null) {
+            return {
+                color: darkerMissing,
+                fillColor: missing,
+                weight: 2,
+                fillOpacity: 0.5,
+                zIndex: 10
+            };
+        } else {
+            return {    
+                color: borderColor,
+                fillColor: defaultColor,
+                weight: 2,
+                fillOpacity: 0.2,
+                zIndex: 9
+            };
+        }
+    }
+
+    function lastNums(str) {
+        var parts = str.split(':');
+        return parts[parts.length - 1];
+    }
+
+    function getPolygonCenter(layer) {
+        if (layer instanceof L.Polygon) {
+            var bounds = layer.getBounds();
+            return bounds.getCenter();
+        } else {
+            console.error("Layer is not a polygon");
+            return null;
+        }
+    }
+
+    var legend = L.control({ position: 'bottomleft' });
+
+    legend.onAdd = function (map) {
+        var div = L.DomUtil.create('div', 'info legend');
+        div.innerHTML += '<b>Нумерация:</b><br>';
+        div.innerHTML += '<i style="background:red; width: 18px; height: 18px; display: inline-block;"></i> По кадастровому номеру<br>';
+        div.innerHTML += '<i style="background:' + defaultColor + '; width: 18px; height: 18px; display: inline-block;"></i> По номеру участка';
+        return div;
+    };
+
+    legend.addTo(map);
+</script>
+{% endblock content %}

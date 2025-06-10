@@ -1,0 +1,159 @@
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:59&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:58&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:57&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:56&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:55&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:36&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:42&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:48&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:50&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:43&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:37&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:19&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:41&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:30&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:21&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:40&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:54&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:34&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:16&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:14&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:15&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:17&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:26&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:20&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:29&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:44&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: The read operation timed out
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:25&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:62&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:39&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:64&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:18&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:27&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:28&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:35&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:38&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:45&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:46&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:47&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:52&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:53&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:31&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:112&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:65&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:49&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:68&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:72&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:73&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:69&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:74&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:84&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:70&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:75&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:76&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:79&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:80&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:77&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:71&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:83&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:82&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:81&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:78&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: The read operation timed out
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:63&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:67&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:66&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:51&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:61&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:60&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:93&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:110&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:108&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:104&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:103&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:8&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:9&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:85&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:86&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:90&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:32&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:33&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: <urlopen error EOF occurred in violation of protocol (_ssl.c:992)>
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:87&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:89&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:88&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:10&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:96&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: <urlopen error EOF occurred in violation of protocol (_ssl.c:992)>
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:92&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: <urlopen error EOF occurred in violation of protocol (_ssl.c:992)>
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:94&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:102&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: <urlopen error EOF occurred in violation of protocol (_ssl.c:992)>
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:99&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:109&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:95&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:106&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:91&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:98&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:100&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: <urlopen error EOF occurred in violation of protocol (_ssl.c:992)>
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:97&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:101&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:105&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:107&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:111&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:24&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:22&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:11&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:12&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:23&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:13&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:122&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:121&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:117&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:116&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:115&CRS=EPSG:4326
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:114&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: <urlopen error EOF occurred in violation of protocol (_ssl.c:992)>
+DEBUG:rosreestr2coord.logger:https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=86:11:0501010:113&CRS=EPSG:4326
+ERROR:rosreestr2coord.logger:Request failed: Remote end closed connection without response

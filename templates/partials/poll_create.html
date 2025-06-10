@@ -1,0 +1,85 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="container mx-auto px-4 py-8 max-w-4xl">
+    <h1 class="text-2xl font-bold text-gray-800 mb-6">
+        {% if poll %}
+            Редактировать голосование
+        {% else %}
+            Создать голосование
+        {% endif %}
+    </h1>
+
+    <form method="POST" action="{{ request.url }}" class="space-y-6">
+        <div>
+            <label for="question" class="block  text-sm font-medium text-gray-700">Вопрос</label>
+            <input type="text" id="question" name="question" value="{{ poll.question if poll else '' }}"
+                   class="mt-1 border focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                   required>
+        </div>
+
+        <div id="options-container" class="space-y-2">
+            <label class="block text-sm font-medium text-gray-700">Варианты ответов</label>
+            {% if poll and poll.options %}
+                {% for option in poll.options %}
+                <div class="flex items-center space-x-2">
+                    <input type="text" name="option_{{ loop.index0 }}" value="{{ option.text }}" 
+                           class="w-full border px-3 py-2 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                           required>
+                    <button type="button" onclick="removeOption(this)" class="text-red-500 hover:text-red-700">
+                        ❌
+                    </button>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="flex items-center space-x-2">
+                    <input type="text" name="option_0" placeholder="Вариант 1"
+                           class="w-full border px-3 py-2 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                           required>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <input type="text" name="option_1" placeholder="Вариант 2"
+                           class="w-full border px-3 py-2 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                           required>
+                </div>
+            {% endif %}
+        </div>
+
+        <button type="button" onclick="addOption()" class="bg-slate-800 hover:bg-gray-700 text-white shadow-sm text-sm font-medium py-2 px-4 rounded-lg">
+            Добавить вариант
+        </button>
+
+        <button type="submit"
+                class="py-2 px-4 shadow-sm text-sm font-medium rounded-lg bg-green-500 hover:bg-green-700 text-white focus:outline-none focus:shadow-outline">
+            {% if poll %}
+                Сохранить изменения
+            {% else %}
+                Создать голосование
+            {% endif %}
+        </button>
+    </form>
+</div>
+
+<script>
+let optionIndex = {{ poll.options|length if poll else 2 }};
+
+function addOption() {
+    const container = document.getElementById('options-container');
+    const div = document.createElement('div');
+    div.className = 'flex items-center space-x-2';
+    div.innerHTML = `
+        <input type="text" name="option_${optionIndex}" 
+               class="w-full border px-3 py-2 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+               required>
+        <button type="button" onclick="removeOption(this)" class="text-red-500 hover:text-red-700">
+            ❌
+        </button>
+    `;
+    container.appendChild(div);
+    optionIndex++;
+}
+
+function removeOption(button) {
+    button.parentElement.remove();
+}
+</script>
+{% endblock %}
