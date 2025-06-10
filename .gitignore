@@ -24,7 +24,6 @@ archive.zip
 .env
 output
 tmp
-migrations
 # vim temporary files
 *~
 .*.sw?
