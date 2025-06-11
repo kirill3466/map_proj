@@ -58,14 +58,24 @@
 
       <div id="mobile-menu" class="hidden md:hidden container mx-auto px-4 pb-2">
         <div class="space-y-1 px-2 py-2">
-          {% if request.cookies.get('access_token') %}
             <a href="/" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Главная</a>
             <a href="/parcels" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Участки</a>
             <a href="/map" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Карта</a>
             <a href="/posts" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Новости</a>
             <a href="/polls" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Голосования</a>
             <a href="/tickets" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Заявки</a>
-          {% endif %}
+            {% if not request.cookies.get('access_token') %}
+            <a href="/auth/register" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                Регистрация
+            </a>
+            <a href="/auth/login" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                Войти
+            </a>
+            {% else %}
+            <a href="/auth/logout" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                Выйти
+            </a>
+            {% endif %}
         </div>
       </div>
     </nav>

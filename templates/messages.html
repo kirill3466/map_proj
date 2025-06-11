@@ -33,22 +33,18 @@
     {% set _ = request.cookies.pop('msg') %}
 {% endif %}
 <script>
-    // Wait for the DOM to be fully loaded
     document.addEventListener("DOMContentLoaded", function() {
-        // Select all alert messages
         const alertMessages = document.querySelectorAll('.alert-message');
 
-        // Loop through each message and set a timeout to hide it
         alertMessages.forEach(function(alert) {
             setTimeout(function() {
                 alert.style.transition = "opacity 0.5s ease";
                 alert.style.opacity = 0;
 
-                // Remove the alert from the DOM after the fade-out
                 alert.addEventListener('transitionend', function() {
                     alert.remove();
                 });
-            }, 5000); // 5000 milliseconds = 5 seconds
+            }, 5000); 
         });
     });
 </script>
