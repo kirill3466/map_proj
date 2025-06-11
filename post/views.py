@@ -35,11 +35,11 @@ def get_all_posts(
     current_user: CurrUser
 ):
     posts = get_all(db_session=db_session)
-    if not posts:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="Посты не найдены."
-        )
+    # if not posts:
+    #     raise HTTPException(
+    #         status_code=status.HTTP_404_NOT_FOUND,
+    #         detail="Посты не найдены."
+    #     )
     return templates.TemplateResponse(
         "partials/posts.html",
         {
