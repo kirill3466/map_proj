@@ -12,8 +12,8 @@ from starlette.requests import Request
 
 from auth.auth import CurrUser
 
-# from parcel.bulk_create import bulk_create_parcels
-# import os
+from parcel.bulk_create import bulk_create_parcels
+import os
 from db.core import engine
 from routing import api_router
 from settings import static_files, templates
@@ -108,11 +108,11 @@ async def redirect_unauthorized(request: Request, call_next):
 def on_startup():
     from db.core import Base, engine
     Base.metadata.create_all(bind=engine)
-#     bulk_create_parcels(
-#         os.path.dirname(
-#             os.path.abspath(__file__)
-#         ) + "/static/geodata/result.geojson"
-#     )
+    bulk_create_parcels(
+        os.path.dirname(
+            os.path.abspath(__file__)
+        ) + "/static/geodata/result.geojson"
+    )
 
 
 api.mount("/static", static_files, name="static")
