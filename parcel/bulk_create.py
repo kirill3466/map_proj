@@ -65,5 +65,5 @@ def bulk_create_parcels(geojson_path: str):
 if __name__ == "__main__":
     path = os.path.dirname(
         os.path.abspath(__file__)
-    ) + "/static/geodata/result.geojson"
+    ) + "/static/geodata/result1.geojson"
     bulk_create_parcels(path)
