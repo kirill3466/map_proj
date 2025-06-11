@@ -8,13 +8,13 @@
 
     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {% for parcel in parcels %}
-            {% set last_number = parcel.readable_address.split(' ')[-1] if parcel.readable_address.split(' ')[-1].isdigit() else parcel.cadastral_code.split(':')[-1] %}
+            {% set last_number = parcel.readable_address.split(' ')[-1] if parcel and parcel.readable_address.split(' ')[-1].isdigit() else parcel.cadastral_code.split(':')[-1] %}
             <a href="/parcels/{{ last_number }}">  
                 <div class="p-5 bg-gray-100 border border-gray-200 rounded-lg shadow-sm">
 
                     <div class="mb-4">
                         <span class="text-sm font-medium text-black-500 dark:text-black-400">Номер участка / Кадастровый номер:</span>
-                        <p class="text-lg font-semibold text-black-900 dark:text-black">{{ parcel.code_id if parcel.code_id.isdigit() else parcel.cadastral_code }}</p>
+                        <p class="text-lg font-semibold text-black-900 dark:text-black">{{ parcel.code_id if parcel and parcel.code_id.isdigit() else parcel.cadastral_code }}</p>
                     </div>
 
                     <div class="mb-4">
