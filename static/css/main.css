@@ -55,3 +55,12 @@ body {
     background-color: var(--color-red-400);
 }
 
+.btn-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-mobile {
+    display: block;
+  }
+}

@@ -1,51 +1,80 @@
-<header class="">
-    <div class="min-h-full">
-        <nav class="bg-slate-800 bg-opacity-80 transition-all duration-400 ease-out">
-            <div class="container mx-auto px-4">
-                <div class="flex h-16 items-center justify-between">
-                    <!-- logo and nav  -->
-                    <div class="flex items-center">
-                        <div class="shrink-0">
-                            <img class="size-10" src="{{ url_for('static', path='/images/gerb-nv.svg') }}" alt="Your Company">
-                        </div>
-                        <div class="hidden md:block">
-                            <div class="ml-10 flex items-baseline space-x-4">
-                                {% if request.cookies.get('access_token') %}
-                                    <a href="/" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Главная</a>
-                                    <a href="/parcels" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Участки</a>
-                                    <a href="/map" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Карта</a>
-                                    <a href="/posts" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Новости</a>
-                                    <a href="/polls" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Голосования</a>
-                                    <a href="/tickets" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Заявки</a>
-                                {% endif %}
-                            </div>
-                        </div>
-                    </div>
-                    <!-- auth buttons  -->
-                    <div class="hidden md:block">
-                        <div class="ml-4 flex items-center md:ml-6">
-                            <div class="relative ml-3">
-                                <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
-                                    {% if not request.cookies.get('access_token') %}
-                                        <a href="/auth/register" class="rounded-md px-3 py-2 text-sm font-medium text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">
-                                            Регистрация
-                                        </a>
-                                        <a href="/auth/login" class="rounded-md px-3 py-2 text-sm font-medium text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">
-                                            Войти
-                                        </a>
-                                    {% else %}
-                                        <a href="/auth/logout" class="rounded-md px-3 py-2 text-sm font-medium text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">
-                                            Выйти
-                                        </a>
-                                    {% endif %}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<header>
+  <div class="min-h-full">
+    <nav class="bg-slate-800 bg-opacity-80 transition-all duration-400 ease-out">
+      <div class="container mx-auto px-4">
+        <div class="flex h-16 items-center justify-between">
+
+          <div class="flex items-center">
+            <div class="shrink-0">
+              <img class="size-10" src="{{ url_for('static', path='/images/gerb-nv.svg') }}" alt="Your Company">
             </div>
-        </nav>
-    </div>
+
+            <div class="hidden md:flex ml-10 space-x-4">
+              {% if request.cookies.get('access_token') %}
+                <a href="/" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Главная</a>
+                <a href="/parcels" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Участки</a>
+                <a href="/map" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Карта</a>
+                <a href="/posts" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Новости</a>
+                <a href="/polls" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Голосования</a>
+                <a href="/tickets" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Заявки</a>
+              {% endif %}
+            </div>
+          </div>
+
+          <div class="btn-mobile items-center">
+            <button id="mobile-menu-button" 
+                    class="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-gray-700 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30">
+                <path fill="white" d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path>
+                </svg>
+            </button>
+        </div>
+
+          <div class="hidden md:block">
+            <div class="ml-4 flex items-center md:ml-6">
+              <div class="relative ml-3">
+                <div class="flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+                  {% if not request.cookies.get('access_token') %}
+                    <a href="/auth/register" class="rounded-md px-3 py-2 text-sm font-medium text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">
+                      Регистрация
+                    </a>
+                    <a href="/auth/login" class="rounded-md px-3 py-2 text-sm font-medium text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">
+                      Войти
+                    </a>
+                  {% else %}
+                    <a href="/auth/logout" class="rounded-md px-3 py-2 text-sm font-medium text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">
+                      Выйти
+                    </a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden container mx-auto px-4 pb-2">
+        <div class="space-y-1 px-2 py-2">
+          {% if request.cookies.get('access_token') %}
+            <a href="/" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Главная</a>
+            <a href="/parcels" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Участки</a>
+            <a href="/map" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Карта</a>
+            <a href="/posts" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Новости</a>
+            <a href="/polls" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Голосования</a>
+            <a href="/tickets" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Заявки</a>
+          {% endif %}
+        </div>
+      </div>
+    </nav>
+  </div>
 </header>
 
+<script>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
 
+  mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>

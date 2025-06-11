@@ -1,17 +1,33 @@
 {% extends 'index.html' %}
 {% block content %}
 <style>
-    #map {
-        height: 700px;
-    }
     #map > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-marker-pane > div:nth-child(14) > div,
     #map > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-overlay-pane > svg > g > path:nth-child(14) {
         display: none;
     }
+    #map {
+        height: 90vh;
+        width: 100%;
+    }
+
+    .legend {
+        background: white;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+    @media (max-width: 600px) {
+        .legend {
+            font-size: 12px;
+        }
+    }
 </style>
-<div class="">
-    <div id="map">
-    </div>
+
+<div class="container mx-auto px-4 py-4">
+    <div id="map"></div>
 </div>
 
 <script>
