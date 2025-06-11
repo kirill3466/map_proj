@@ -212,9 +212,10 @@ def update_poll_api(
 def cast_vote_route(
     request: Request,
     db_session: DbSession,
+    current_user: CurrUser,
     poll_id: int = Form(...),
-    option_id: int = Form(...)
+    option_id: int = Form(...),
 ):
-    user_identifier = request.client.host
+    user_identifier = current_user.id
     cast_vote(db_session, poll_id, option_id, user_identifier)
     return RedirectResponse(f"/polls/{poll_id}", status_code=303)
