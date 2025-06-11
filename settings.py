@@ -8,7 +8,7 @@ config = Config(".env")
 
 templates = Jinja2Templates(directory="templates")
 static_files = StaticFiles(
-    directory=Path(__file__).parent.parent.absolute() / "src/static"
+    directory=Path(__file__).parent.parent.absolute() / "backend/static"
 )
 PARCEL_FULL_CODE = config("PARCEL_FULL_CODE", default="86:11:0501010:")
 JWT_SECRET = config("JWT_SECRET", default="abc123")
