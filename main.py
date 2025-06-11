@@ -104,15 +104,15 @@ async def redirect_unauthorized(request: Request, call_next):
 # async def callback(request: Request):
 #     token = await
 
-@api.on_event("startup")
-def on_startup():
-    from db.core import Base, engine
-    Base.metadata.create_all(bind=engine)
-    bulk_create_parcels(
-        os.path.dirname(
-            os.path.abspath(__file__)
-        ) + "/static/geodata/result1.geojson"
-    )
+# @api.on_event("startup")
+# def on_startup():
+#     from db.core import Base, engine
+#     Base.metadata.create_all(bind=engine)
+#     bulk_create_parcels(
+#         os.path.dirname(
+#             os.path.abspath(__file__)
+#         ) + "/static/geodata/result1.geojson"
+#     )
 
 
 api.mount("/static", static_files, name="static")
