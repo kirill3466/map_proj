@@ -111,7 +111,7 @@ def on_startup():
     bulk_create_parcels(
         os.path.dirname(
             os.path.abspath(__file__)
-        ) + "/static/geodata/result.geojson"
+        ) + "/static/geodata/result1.geojson"
     )
 
 
