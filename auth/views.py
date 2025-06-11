@@ -49,7 +49,7 @@ async def register(
             },
         )
     user = create(db_session=db_session, user_create=user_create)
-    return RedirectResponse("/login", status_code=303)
+    return RedirectResponse("auth/login", status_code=303)
     # return templates.TemplateResponse(
     #     "success.html",
     #     {
