@@ -5,9 +5,11 @@
         <div class="flex h-16 items-center justify-between">
 
           <div class="flex items-center">
-            <div class="shrink-0">
-              <img class="size-10" src="{{ url_for('static', path='/images/gerb-nv.svg') }}" alt="Your Company">
-            </div>
+            <a href="/">
+                <div class="shrink-0">
+                <img class="size-10" src="{{ url_for('static', path='/images/gerb-nv.svg') }}">
+                </div>
+            </a>
 
             <div class="hidden md:flex ml-10 space-x-4">
               {% if request.cookies.get('access_token') %}
